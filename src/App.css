@@ -1,0 +1,38 @@
+*:root{
+  --radio-count: 0;
+}
+
+.body{
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-container{
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.app-container h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #333;
+  padding: 1.5rem 4rem;
+}
+
+.radio-main-container {
+  padding: 1.5rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--radio-count), 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+}
